@@ -5,7 +5,7 @@ pagination:
   alias: rule
 permalink: "rules/{{ rule.id }}/index.html"
 layout: layout.njk
-title: "Rule {{ rule.id }}"
+title: "Ternary-Totalistic-Elementary-Cellular-Automata-Hub"
 ---
 
 <h1>
@@ -18,7 +18,10 @@ title: "Rule {{ rule.id }}"
   {% for row in rule.history %}
   <div class="ca-row">
     {% for cell in row %}
-    <span class="state{{ cell }}">{{ cell }}</span>
+    <span class="state{{ cell }}">
+      {% if cell == 0 %} X {% elif cell == 1 %} O {% elif cell == 2 %} Z {% else
+      %} X {% endif %}
+    </span>
     {% endfor %}
   </div>
   {% endfor %}
