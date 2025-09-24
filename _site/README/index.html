@@ -1,0 +1,23 @@
+<h1>ternary-totalistic-elementary-cellular-automata-statically-generated-html</h1>
+<p>statically generated site representing all rulesets of a tenary totalistic (n=3) cellular automata (CA)</p>
+<h1>meaning</h1>
+<ul>
+<li>ternary: 3 possible states</li>
+<li>totalistic: next state is calculated by sum of the neighbourhood</li>
+<li>N=3: 3 neighbours, self, right and left</li>
+<li>elementary: flat list. As opposed to 2d of game of life</li>
+<li>cellular-automata: https://en.wikipedia.org/wiki/Cellular_automaton</li>
+<li>statically generated html: the result is rendered as html at build time</li>
+</ul>
+<h1>rule table</h1>
+<p>with a totalistic CA we don't care about the order of the neihbourhood, just the sum.</p>
+<p>N=3, so we have 3 values, they can be 0, 1 or 2.</p>
+<p>Minimum value: 0 + 0 + 0 = 0</p>
+<p>Max value: 2 + 2 + 2 = 6</p>
+<p>So we have 7 possibilities.</p>
+<p>3 * 3 * 3 * 3 * 3 * 3 * 3 = 2187. So 2187 possible rulesets.</p>
+<h1>plan</h1>
+<ul>
+<li>generate a list of each possible ruleset</li>
+<li>use 11ty to statically render the result of each ruleset</li>
+</ul>
