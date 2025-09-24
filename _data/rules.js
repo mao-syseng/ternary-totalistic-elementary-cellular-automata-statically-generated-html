@@ -44,7 +44,7 @@ function simulate(rule, width, steps) {
 
 module.exports = () => {
   const rules = generateRules();
-  return rules.slice(0, 5).map((rule, idx) => ({
+  return rules.map((rule, idx) => ({
     id: idx,
     rule,
     history: simulate(rule, 100, 50),
