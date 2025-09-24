@@ -11,10 +11,15 @@ statically generated site representing all rulesets of a tenary totalistic (n=3)
 
 # rule table
 with a totalistic CA we don't care about the order of the neihbourhood, just the sum.
+
 N=3, so we have 3 values, they can be 0, 1 or 2.
+
 Minimum value: 0 + 0 + 0 = 0
+
 Max value: 2 + 2 + 2 = 6
+
 So we have 7 possibilities.
+
 3 * 3 * 3 * 3 * 3 * 3 * 3 = 2187. So 2187 possible rulesets.
 
 
