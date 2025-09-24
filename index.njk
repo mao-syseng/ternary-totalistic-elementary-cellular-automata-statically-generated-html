@@ -7,8 +7,9 @@ permalink: "/"
 <h1>ternary totalistic elementary cellular automata</h1>
 <p>All 2157 rulesets statically rendered at built time</p>
 <ul>
-  {% for rule in rules %}
-  <li>
+  {% for rule in rules %} {% set groupIndex = (loop.index0 // 3) % 3 %} {% set
+  stateClass = "state" ~ groupIndex %}
+  <li class="{{ stateClass }}">
     <a href="/rules/{{ rule.id }}/">Rule {{ rule.id }}</a>
     | {{ rule.rule | join("") }}
   </li>
