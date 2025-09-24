@@ -1,0 +1,16 @@
+---
+title: Overview
+layout: layout.njk
+permalink: "/"
+---
+
+<h1>ternary totalistic elementary cellular automata</h1>
+<p>All 2157 rulesets statically rendered at built time</p>
+<ul>
+  {% for rule in rules %}
+  <li>
+    <a href="/rules/{{ rule.id }}/">Rule {{ rule.id }}</a>
+    | {{ rule.rule | join("") }}
+  </li>
+  {% endfor %}
+</ul>

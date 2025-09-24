@@ -1,0 +1,24 @@
+---
+pagination:
+  data: rules
+  size: 1
+  alias: rule
+permalink: "rules/{{ rule.id }}/index.html"
+layout: layout.njk
+---
+
+<h1>
+  {% set nextId = (rule.id + 1) % rules.length %} Rule {{ rule.id }} |
+  <a href="/rules/{{ nextId }}">go to next rule</a>
+</h1>
+<p>Mapping | {{ rule.rule | join("") }} | <a href="/">Back to overview</a></p>
+
+<div class="ca-grid">
+  {% for row in rule.history %}
+  <div class="ca-row">
+    {% for cell in row %}
+    <span class="state{{ cell }}">{{ cell }}</span>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

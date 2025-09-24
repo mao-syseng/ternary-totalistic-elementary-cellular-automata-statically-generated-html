@@ -1,0 +1,21 @@
+{
+  "name": "ternary-totalistic-elementary-cellular-automata-statically-generated-html",
+  "version": "1.0.0",
+  "description": "statically generated site representing all rulesets of a tenary totalistic (n=3) cellular automata (CA)",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mao-syseng/ternary-totalistic-elementary-cellular-automata-statically-generated-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/mao-syseng/ternary-totalistic-elementary-cellular-automata-statically-generated-html#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
