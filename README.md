@@ -24,5 +24,6 @@ So we have 7 possibilities.
 
 
 # plan
-generate a list of each possible ruleset
-use 11ty to statically render the result of each ruleset.
+- generate a list of each possible ruleset
+- use 11ty to statically render the result of each ruleset
+
