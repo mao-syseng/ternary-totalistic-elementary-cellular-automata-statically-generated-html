@@ -27,3 +27,6 @@ So we have 7 possibilities.
 - generate a list of each possible ruleset
 - use 11ty to statically render the result of each ruleset
 
+
+# Color scheme:
+https://lospec.com/palette-list/fuzzyfour
