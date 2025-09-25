@@ -5,13 +5,26 @@ permalink: "/"
 ---
 
 <h1>ternary totalistic elementary cellular automata</h1>
-<p>All 2157 rulesets statically rendered at built time</p>
+<p>
+  ternary = 3 possible states
+  <br />
+  totalistic = ruleset looks at sum of neighbourhood
+  <br />
+  elemetnary = 1 dimensional array
+  <br />
+  min sum = 0, max sum = 6, 7 total possibilities
+  <br />
+  3 to the power of 7 = 2187
+  <br />
+  All 2187 rulesets statically rendered at built time
+</p>
 <ul>
   {% for rule in rules %} {% set groupIndex = (loop.index0 // 3) % 3 %} {% set
   stateClass = "state" ~ groupIndex %}
-  <li class="{{ stateClass }}">
-    <a href="/rules/{{ rule.id }}/">Rule {{ rule.id }}</a>
-    | {{ rule.rule | join("") }}
+  <li>
+    <a class="{{ stateClass }}" href="/rules/{{ rule.id }}/"
+      >Rule {{ rule.id }} | {{ rule.rule | join("") }}
+    </a>
   </li>
   {% endfor %}
 </ul>
