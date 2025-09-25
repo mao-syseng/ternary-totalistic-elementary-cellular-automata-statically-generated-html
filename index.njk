@@ -18,13 +18,11 @@ permalink: "/"
   <br />
   All 2187 rulesets statically rendered at built time
 </p>
-<ul>
+<main class="overview">
   {% for rule in rules %} {% set groupIndex = (loop.index0 // 3) % 3 %} {% set
   stateClass = "state" ~ groupIndex %}
-  <li>
-    <a class="{{ stateClass }}" href="/rules/{{ rule.id }}/"
-      >Rule {{ rule.id }} | {{ rule.rule | join("") }}
-    </a>
-  </li>
+  <a class="{{ stateClass }}" href="/rules/{{ rule.id }}/"
+    >Rule {{ rule.id }}
+  </a>
   {% endfor %}
-</ul>
+</main>
