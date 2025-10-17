@@ -19,7 +19,7 @@ title: "Ternary-Totalistic-Elementary-Cellular-Automata-Hub"
   <div class="ca-row">
     {% for cell in row %}
     <span class="state{{ cell }}">
-      {% if cell == 0 %} X {% elif cell == 1 %} O {% elif cell == 2 %} Z {% else
+      {% if cell == 0 %} # {% elif cell == 1 %} 0 {% elif cell == 2 %} . {% else
       %} X {% endif %}
     </span>
     {% endfor %}
