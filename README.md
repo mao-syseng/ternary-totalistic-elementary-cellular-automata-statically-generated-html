@@ -1,4 +1,5 @@
 # ternary-totalistic-elementary-cellular-automata-statically-generated-html
+https://ternary-totalistic-ca-hub.netlify.app/
 statically generated site representing all rulesets of a tenary totalistic (n=3) cellular automata (CA)
 
 # meaning
